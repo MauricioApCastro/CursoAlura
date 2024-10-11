@@ -2,7 +2,8 @@
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
 Console.WriteLine(mensagemDeBoasVindas);
 
-void ExibirTitulo() { 
+void ExibirTitulo()
+{
     Console.WriteLine(@"
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░  
 ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
@@ -21,6 +22,17 @@ void Menu()
     Console.WriteLine("Digite 4 para exibir a média de uma banda");
     Console.WriteLine("Digite -1 para sair");
     int opcao = int.Parse(Console.ReadLine());
+
+    switch (opcao)
+    {
+        case 1: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case 2: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case 3: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case 4: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case -1: Console.WriteLine("você escolheu a opção " + opcao); break;
+        default: Console.WriteLine("Opção inválida"); break;
+    }
+
 
 }
 ExibirTitulo();
