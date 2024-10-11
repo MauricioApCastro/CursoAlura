@@ -29,7 +29,7 @@ void Menu()
         case 2: Console.WriteLine("você escolheu a opção " + opcao); break;
         case 3: Console.WriteLine("você escolheu a opção " + opcao); break;
         case 4: Console.WriteLine("você escolheu a opção " + opcao); break;
-        case -1: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case -1: Console.WriteLine("Até mais " + opcao); break;
         default: Console.WriteLine("Opção inválida"); break;
     }
 
