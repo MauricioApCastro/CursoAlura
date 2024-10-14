@@ -47,7 +47,9 @@ void RegistrarBanda()
 {
    
     Console.Clear();
+    Console.WriteLine("******************");
     Console.WriteLine("Registro de bandas");
+    Console.WriteLine("******************");
     Console.WriteLine("Digite o nome da Banda: ");
     string nomeDaBanda = Console.ReadLine();
     bandas.Add(nomeDaBanda);
@@ -62,7 +64,9 @@ void RegistrarBanda()
 void MostrarBandas()
 {
     Console.Clear();
+    Console.WriteLine("******************");
     Console.WriteLine("Bandas registradas");
+    Console.WriteLine("******************");
     foreach (var banda in bandas)
     {
         Console.WriteLine(banda);
