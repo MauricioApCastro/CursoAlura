@@ -64,12 +64,13 @@ void RegistrarBanda()
 void MostrarBandas()
 {
     Console.Clear();
+  
     Console.WriteLine("******************");
     Console.WriteLine("Bandas registradas");
     Console.WriteLine("******************");
     foreach (var banda in bandas)
     {
-        Console.WriteLine(banda);
+        Console.WriteLine($"banda: {banda}");
     }
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
     Console.ReadKey();
