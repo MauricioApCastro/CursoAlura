@@ -21,6 +21,7 @@ void Menu()
     Console.WriteLine("Digite 3 para avaliar uma banda");
     Console.WriteLine("Digite 4 para exibir a média de uma banda");
     Console.WriteLine("Digite -1 para sair");
+    Console.WriteLine("\nEscolha uma opção: ");
     int opcao = int.Parse(Console.ReadLine());
 
     switch (opcao)
@@ -31,9 +32,12 @@ void Menu()
         case 4: Console.WriteLine("você escolheu a opção " + opcao); break;
         case -1: Console.WriteLine("Até mais " + opcao); break;
         default: Console.WriteLine("Opção inválida"); break;
+            
+
     }
 
 
 }
 ExibirTitulo();
 Menu();
+

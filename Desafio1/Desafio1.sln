@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio1", "Desafio1\Desafio1.csproj", "{74E24CD1-6A09-4696-BCCF-CBCFDC48A70B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio1", "Desafio1\Desafio1.csproj", "{74E24CD1-6A09-4696-BCCF-CBCFDC48A70B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSound", "..\ScreenSound\ScreenSound.csproj", "{C40921C4-66DC-40E9-A0E2-1A4C0C3A93C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{74E24CD1-6A09-4696-BCCF-CBCFDC48A70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E24CD1-6A09-4696-BCCF-CBCFDC48A70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E24CD1-6A09-4696-BCCF-CBCFDC48A70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40921C4-66DC-40E9-A0E2-1A4C0C3A93C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40921C4-66DC-40E9-A0E2-1A4C0C3A93C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40921C4-66DC-40E9-A0E2-1A4C0C3A93C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40921C4-66DC-40E9-A0E2-1A4C0C3A93C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
