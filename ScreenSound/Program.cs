@@ -26,18 +26,35 @@ void Menu()
 
     switch (opcao)
     {
-        case 1: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case 1:
+            RegistrarBanda();
+            break;
         case 2: Console.WriteLine("você escolheu a opção " + opcao); break;
         case 3: Console.WriteLine("você escolheu a opção " + opcao); break;
         case 4: Console.WriteLine("você escolheu a opção " + opcao); break;
         case -1: Console.WriteLine("Até mais " + opcao); break;
         default: Console.WriteLine("Opção inválida"); break;
-            
+
 
     }
 
 
 }
+void RegistrarBanda()
+{
+   
+    Console.Clear();
+    Console.WriteLine("Registro de bandas");
+    Console.WriteLine("Digite o nome da Banda: ");
+    string nomeDaBanda = Console.ReadLine();    
+    Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!!! ");
+    Thread.Sleep(2000);
+    Console.Clear();
+    
+    ExibirTitulo();
+    Menu(); 
+}
+
 ExibirTitulo();
 Menu();
 
