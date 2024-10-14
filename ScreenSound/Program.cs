@@ -30,7 +30,9 @@ void Menu()
         case 1:
             RegistrarBanda();
             break;
-        case 2: Console.WriteLine("você escolheu a opção " + opcao); break;
+        case 2: Console.WriteLine("você escolheu a opção " + opcao);
+           MostrarBandas();
+            break;
         case 3: Console.WriteLine("você escolheu a opção " + opcao); break;
         case 4: Console.WriteLine("você escolheu a opção " + opcao); break;
         case -1: Console.WriteLine("Até mais " + opcao); break;
@@ -56,6 +58,20 @@ void RegistrarBanda()
     
     ExibirTitulo();
     Menu(); 
+}
+void MostrarBandas()
+{
+    Console.Clear();
+    Console.WriteLine("Bandas registradas");
+    foreach (var banda in bandas)
+    {
+        Console.WriteLine(banda);
+    }
+    Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirTitulo();
+    Menu();
 }
 
 ExibirTitulo();
