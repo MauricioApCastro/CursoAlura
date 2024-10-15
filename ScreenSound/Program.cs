@@ -1,5 +1,4 @@
-﻿//criar uma string com a mensagem de boas vindas e mostrar no console
-string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
+﻿string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
 Console.WriteLine(mensagemDeBoasVindas);
 List<string> bandas = new List<string>();
 
@@ -57,7 +56,7 @@ void RegistrarBanda()
     Thread.Sleep(2000);
     Console.Clear();
     
-    ExibirTitulo();
+  
     Menu(); 
 }
 void MostrarBandas()
@@ -72,7 +71,7 @@ void MostrarBandas()
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
     Console.ReadKey();
     Console.Clear();
-    ExibirTitulo();
+    
     Menu();
 }
 
