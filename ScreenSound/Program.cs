@@ -46,9 +46,7 @@ void RegistrarBanda()
 {
    
     Console.Clear();
-    Console.WriteLine("******************");
-    Console.WriteLine("Registro de bandas");
-    Console.WriteLine("******************");
+    ExibirTituloDestacado("Registrar Banda");
     Console.WriteLine("Digite o nome da Banda: ");
     string nomeDaBanda = Console.ReadLine();
     bandas.Add(nomeDaBanda);
@@ -57,7 +55,7 @@ void RegistrarBanda()
     Thread.Sleep(2000);
     Console.Clear();
     
-    ExibirTitulo();
+  
     Menu(); 
 }
 void MostrarBandas()
@@ -74,8 +72,21 @@ void MostrarBandas()
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu");
     Console.ReadKey();
     Console.Clear();
-    ExibirTitulo();
+    
     Menu();
+}
+
+void ExibirTituloDestacado(string titulo)
+{
+    //calcular o tamanho do titulo
+    int tamanhoTitulo = titulo.Length;
+    //criar string vazia para armazenar os caracteres  
+    string asteriscos = string.Empty.PadLeft(tamanhoTitulo,'*');
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos);
+
+
 }
 
 ExibirTitulo();
